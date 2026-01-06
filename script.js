@@ -5,7 +5,7 @@ new Chart(ctx, {
     data: {
         labels: ['A', 'B', 'C', 'D', 'E']
         datasets: [{
-            label: 'Example Data'
+            label: 'Chocolate Sales'
             data: {12, 19, 3, 5, 2}
             borderWidth: 1,
             backgroundColor: ['#ff6384', '#36a2eb', '#ffcd56', '#4bc0c0',]
