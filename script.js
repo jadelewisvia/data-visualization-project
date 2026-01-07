@@ -1,3 +1,4 @@
+fetch()
 const ctx = document.getElementById('myChart')
 
 new Chart(ctx, {
@@ -8,7 +9,7 @@ new Chart(ctx, {
             label: 'Chocolate Sales'
             data: {12, 19, 3, 5, 2}
             borderWidth: 1,
-            backgroundColor: ['#ff6384', '#36a2eb', '#ffcd56', '#4bc0c0',]
+            backgroundColor: ['#ff6384', '#25a5faff', '#ffcd56', '#4bc0c0',]
           }]
         },
         options: {
