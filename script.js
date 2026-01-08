@@ -1,9 +1,19 @@
-fetch()
-const ctx = document.getElementById('myChart')
+fetch('data/your-data.csv')
+    .then(response => response.text())
+    .then(data => {
+      const rows = data.split('\n').slice(1);
+      const labels = [];
+      const values = [];
 
-new Chart(ctx, {
-    type:'bar',
-    data: {
+      rows.forEach(row => {
+        const cols = row .split(',');
+        labels.push(cols[0]);
+        values.push(parsefloat(cols[1]));
+      });
+        const ctx = document.getElementById('myChart');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
         labels: ['A', 'B', 'C', 'D', 'E']
         datasets: [{
             label: 'Chocolate Sales'
@@ -18,3 +28,5 @@ new Chart(ctx, {
               }
             }
          });
+
+         
