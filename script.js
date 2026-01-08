@@ -8,7 +8,7 @@ fetch('data/your-data.csv')
       rows.forEach(row => {
         const cols = row .split(',');
         labels.push(cols[0]);
-        values.push(parsefloat(cols[1]));
+        values.push(parseFloat(cols[1]));
       });
         const ctx = document.getElementById('myChart');
         new Chart(ctx, {
